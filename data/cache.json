@@ -1,0 +1,2249 @@
+{
+  "lastUpdated": "2026-06-02T18:55:54.938Z",
+  "data": [
+    {
+      "district": {
+        "value": "21",
+        "text": "ಬೆ೦ಗಳೂರು ಗ್ರಾಮಾ೦ತರ"
+      },
+      "trek": {
+        "value": "143",
+        "text": "ಹುಲುಕುಡಿ ಬೆಟ್ಟ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "21",
+        "text": "ಬೆ೦ಗಳೂರು ಗ್ರಾಮಾ೦ತರ"
+      },
+      "trek": {
+        "value": "77",
+        "text": "ಮಾಕಳಿದುರ್ಗ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "27",
+        "text": "ಚಾಮರಾಜನಗರ"
+      },
+      "trek": {
+        "value": "67",
+        "text": "ನಾಗಮಲೈ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "28",
+        "text": "ಚಿಕ್ಕಬಳ್ಳಾಪುರ"
+      },
+      "trek": {
+        "value": "117",
+        "text": "ಕೈವಾರ ಬೆಟ್ಟ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "17",
+        "text": "ಚಿಕ್ಕಮಗಳೂರು"
+      },
+      "trek": {
+        "value": "98",
+        "text": "ಎತ್ತಿನಭುಜ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "17",
+        "text": "ಚಿಕ್ಕಮಗಳೂರು"
+      },
+      "trek": {
+        "value": "114",
+        "text": "ಗಂಗಡಿಕಲ್‌ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "17",
+        "text": "ಚಿಕ್ಕಮಗಳೂರು"
+      },
+      "trek": {
+        "value": "112",
+        "text": "ಕುದುರೆಮುಖ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "17",
+        "text": "ಚಿಕ್ಕಮಗಳೂರು"
+      },
+      "trek": {
+        "value": "110",
+        "text": "ಕುರಿಂಜಲ್‌ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "17",
+        "text": "ಚಿಕ್ಕಮಗಳೂರು"
+      },
+      "trek": {
+        "value": "116",
+        "text": "ನರಸಿಂಹಪರ್ವತ ಚಾರಣ - ಕಿಗ್ಗಾ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "17",
+        "text": "ಚಿಕ್ಕಮಗಳೂರು"
+      },
+      "trek": {
+        "value": "115",
+        "text": "ವಾಲಿಕುಂಜಾ ಚಾರಣ - ಎಸ್.ಕೆ.ಬಾರ್ಡರ್"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "24",
+        "text": "ದಕ್ಷಿಣ ಕನ್ನಡ"
+      },
+      "trek": {
+        "value": "125",
+        "text": "ಬಂಡಾಜೆ ಚಾರಣ - ವೊಳಂಬ್ರ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "24",
+        "text": "ದಕ್ಷಿಣ ಕನ್ನಡ"
+      },
+      "trek": {
+        "value": "113",
+        "text": "ನೇತ್ರಾವತಿ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "4",
+        "text": "ಕಲಬುರ್ಗಿ"
+      },
+      "trek": {
+        "value": "126",
+        "text": "ಚಂದ್ರಂಪಳ್ಳಿ ಪ್ರಕೃತಿ ಚಾರಣ-ಉದ್ದದ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "4",
+        "text": "ಕಲಬುರ್ಗಿ"
+      },
+      "trek": {
+        "value": "127",
+        "text": "ಚಂದ್ರಂಪಳ್ಳಿ ಪ್ರಕೃತಿ ಚಾರಣ-ಕಿರು ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "25",
+        "text": "ಕೊಡಗು"
+      },
+      "trek": {
+        "value": "65",
+        "text": "ತಡಿಯಾಂಡಮೋಳ್‌ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "19",
+        "text": "ಕೋಲಾರ"
+      },
+      "trek": {
+        "value": "86",
+        "text": "ಅಂತರಾಗಂಗೆ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "29",
+        "text": "ರಾಮನಗರ"
+      },
+      "trek": {
+        "value": "131",
+        "text": "ಬಿದಿರುಕಟ್ಟೆ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "29",
+        "text": "ರಾಮನಗರ"
+      },
+      "trek": {
+        "value": "128",
+        "text": "ಸಾವನದುರ್ಗ ಚಾರಣ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "15",
+        "text": "ಶಿವಮೊಗ್ಗ"
+      },
+      "trek": {
+        "value": "119",
+        "text": "ಕೊಡಾಚಾದ್ರಿ ಚಾರಣ - ಹಿಡ್ಲುಮನೆ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "15",
+        "text": "ಶಿವಮೊಗ್ಗ"
+      },
+      "trek": {
+        "value": "118",
+        "text": "ಕೊಡಾಚಾದ್ರಿ ಚಾರಣ - ವಾಳೂರು"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "15",
+        "text": "ಶಿವಮೊಗ್ಗ"
+      },
+      "trek": {
+        "value": "120",
+        "text": "ನರಸಿಂಹಪರ್ವತ ಚಾರಣ - ಮಳಂದೂರು"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "district": {
+        "value": "16",
+        "text": "ಉಡುಪಿ"
+      },
+      "trek": {
+        "value": "121",
+        "text": "ವಾಲಿಕುಂಜಾ ಚಾರಣ - ಕೆರ್ವಾಶೆ,ಕಾರ್ಕಳ"
+      },
+      "availability": [
+        {
+          "date": "04-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "05-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "06-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "07-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "08-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "09-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "10-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "11-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "12-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "13-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "14-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "15-06-2026",
+          "text": "Full / Blocked",
+          "bg": "transparent",
+          "isAvailable": false
+        },
+        {
+          "date": "16-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "17-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        },
+        {
+          "date": "18-06-2026",
+          "text": "Available",
+          "bg": "rgb(0, 128, 0)",
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}

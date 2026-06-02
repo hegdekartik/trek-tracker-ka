@@ -1,0 +1,993 @@
+<!DOCTYPE html><html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aranya Vihaara - Trekking</title>
+        <link rel="icon" href="images/gov_logo.png" type="img/png" sizes="42x42">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        
+
+        
+        <link href="https://aranyavihaara.karnataka.gov.in/public/fonts/Nudi_fonts/NudiUni07e.ttf">
+        
+        <link href="https://aranyavihaara.karnataka.gov.in/css/style1.css" rel="stylesheet">
+        <link href="https://aranyavihaara.karnataka.gov.in/css/responsive.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* li {
+
+    font-family: 'NudiUni', sans-serif;
+}
+ */
+
+
+    </style>
+
+
+
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/2d/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/2d/util.js"></script></head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div class="page-wrapper">
+        <nav class="navbar navbar-expand-lg bg_color">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://aranyavihaara.karnataka.gov.in"><i class="bi bi-list" style="color: #fff;"></i> ಮುಖಪುಟ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/aboutus">ನಮ್ಮ ಬಗ್ಗೆ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/contactus">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="statutoryinstructions">ಶಾಸನಬದ್ಧ ನಿಬಂಧನೆ/ಸೂಚನೆ</a>
+                    </li>
+                                                      <li class="nav-item">
+                    <a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/login">ಲಾಗಿನ್</a>
+                  </li>
+                                                                        <li class="nav-item">
+                    <a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/storage/images/user_manual_trekking.pdf" target="_blank">ಬಳಕೆದಾರ ಕೈಪಿಡಿ</a>
+                  </li>
+            </ul>
+        </ul>
+        <form class="d-flex" role="search">
+            <span class="navbar-text">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                                                
+                                                                        <a href="https://aranyavihaara.karnataka.gov.in/lang/kn" class="btn btn-customprofile">
+                            English
+                        </a>
+                                                                    </li>
+                       
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="https://aranyavihaara.karnataka.gov.in/images/screenreader.svg" alt="screen-reader" title="Screen Reader">
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown accessibilty">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://aranyavihaara.karnataka.gov.in/images/accessibilty.svg" alt="accibility_control" title="Accessibilty controls">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <a href="#"><button id="increasetext" class="font-size-btn p-1 ms-2"><span>A<sup>+</sup></span></button></a>
+                                <a href="#"><button id="resettext" class="font-size-btn p-1"><span>A</span></button></a>
+                                <a href="#"><button id="decreasetext" class="font-size-btn p-1"><span>A<sup>-</sup></span></button></a>
+                                <a class="balck_theme p-2 border-1 bg-dark text-white" href="#" onclick="changeColor()" title="Black and White">A</a>
+                                <a class="standards white_theme p-1 border-1 bg-white text-black" href="#" onclick="defaultColor()" title="Standard">A</a>
+                            </ul>
+                          </li>
+                </ul>
+            </span>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <form id="logout-form" action="https://aranyavihaara.karnataka.gov.in/logout" method="POST">
+    <input type="hidden" name="_token" value="HqKG2DQKXFlH76U9v6H7k7lScB08q48APLuJWGbM" autocomplete="off">
+
+</form>
+
+  <nav class="navbar navbar-expand-lg header_color">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <div class="d-flex">
+                <img src="https://aranyavihaara.karnataka.gov.in/images/Seal_of_Karnataka.png" alt="Logo" title="Government Of Karnataka" class="img-fluid gov_logo">
+                <div class="trekking_title mt-2 ms-2">
+                    <div class="forest_text">ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ</div>
+                    <div class="karnataka_text text-center">ಕರ್ನಾಟಕ ಸರ್ಕಾರ</div>
+                </div>
+                </div>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            <div class="d-flex">
+                <h4 class="mt-4" style="color:#124b74"><b> ಅರಣ್ಯ ವಿಹಾರ</b></h4>
+                <div class="trekking_title ms-2">
+                    <div class="d-none">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/KFD_Logo.svg" alt="Logo" width="100" height="100" title="Karnataka Forest Department en" class="img-fluid forest_logo">
+                    </div>
+                    <div class="en">
+                        <img src="https://aranyavihaara.karnataka.gov.in/images/KFD_Logokn.png" alt="Logo" title="Government Of Karnataka" class="img-fluid gov_logo">
+                    </div>
+                </div>
+                </div>
+        </span>
+    </div>
+  </nav>
+
+
+
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Screen Reader</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 screen_text">
+                            <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility
+                                Guidelines (WCAG)
+                                2.0 level AA. This will enable people with visual impairments access the website using
+                                assistive
+                                technologies, such as screen readers. The information of the website is accessible with
+                                different screen
+                                readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+                            <h5>Following table lists the information about different screen readers,</h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Sl. No.</th>
+                                                <th scope="col">Screen Reader</th>
+                                                <th scope="col">Website</th>
+                                                <th scope="col">Free/ Commercial</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">1</td>
+                                                <td>Non Visual Desktop Access (NVDA)</td>
+                                                <td>
+                                                    <a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a>
+                                                    <h6>(External website that opens in a new window)</h6>
+                                                </td>
+                                                <td>Free</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">2</td>
+                                                <td>JAWS</td>
+                                                <td><a href="http://www.freedomscientific.com" target="_blank">http://www.freedomscientific.com</a>
+                                                    <h6>(External website that opens in a new window)</h6>
+                                                </td>
+                                                <td>Commercial</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">3</td>
+                                                <td>Window-Eyes</td>
+                                                <td><a href="http://www.gwmicro.com" target="_blank">http://www.gwmicro.com</a>
+                                                    <h6>(External website that opens in a new window)</h6>
+                                                </td>
+                                                <td>Commercial</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">4</td>
+                                                <td>System Access To Go</td>
+                                                <td> <a href="http://www.satogo.com/" target="_blank">http://www.satogo.com/</a>
+                                                    <h6>(External website that opens in a new window)</h6>
+                                                </td>
+                                                <td>Commercial</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">5</td>
+                                                <td>WebAnywhere</td>
+                                                <td><a href="http://webinsight.cs.washington.edu/" target="_blank">http://webinsight.cs.washington.edu/</a>
+                                                    <h6>(External website that opens in a new window)</h6>
+                                                </td>
+                                                <td>Free</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">6</td>
+                                                <td>Atoall</td>
+                                                <td> <a href="https://atoall.com/all.asp" target="_blank">
+                                                        https://atoall.com/all.asp</a>
+                                                    <h6>(External website that opens in a new window)</h6>
+                                                </td>
+                                                <td>Free</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <main class="main">
+            <div id="laravel-notify">
+    
+    
+
+    <script>
+        var notify = {
+            timeout: "5000",
+        }
+    </script>
+</div>
+            
+<style>
+ .text-danger {
+    color: red !important;
+}
+
+</style>
+<section class="carousel_topdesign">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <img src="https://aranyavihaara.karnataka.gov.in/images/navbar_img.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="errorModalLabel">Error</h5>
+
+            </div>
+             <div class="modal-body">
+                <div class="">
+                    Requested No. of tickets are not available for selected date and time slot.
+                </div>
+                <div class="d-none">
+                    ಆಯ್ಕೆ ಮಾಡಲಾದ ದಿನಾಂಕ ಹಾಗೂ ಟೀಮ್‌ ಸ್ಲಾಟ್‌ ಗೆ ನೀವು ಕೋರಿದ ಸಂಖ್ಯೆಗಳ ಟಿಕೆಟ್‌ ಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="carousel">
+    <div class="container-fluid p-0">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b1.png" class="img-fluid w-100" alt="carousel1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b2.png" class="img-fluid w-100" alt="carousel2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b3.png" class="img-fluid w-100" alt="carousel3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b4.png" class="img-fluid w-100" alt="carousel3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b5.png" class="img-fluid w-100" alt="carousel3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b6.png" class="img-fluid w-100" alt="carousel3">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://aranyavihaara.karnataka.gov.in/images/b7.png" class="img-fluid w-100" alt="carousel3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="carousel_bottomdesign">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <img src="https://aranyavihaara.karnataka.gov.in/images/carouselbottomdesign.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-3">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <!-- One scrollable card -->
+            <div class="card border-dark shadow-sm">
+                <div class="card-header bg-primary text-white text-center fw-bold"><i class="bi bi-bell-fill text-warning"></i>
+ 
+                    Notifications
+                </div>
+                <!-- Vertical scroll for list + horizontal scroll for long text -->
+                <div style="max-height: 400px; overflow-y: auto;">
+                    <ul class="list-group list-group-flush" style="overflow-x: auto; white-space: nowrap;">
+                                                    <li class="list-group-item d-flex align-items-center py-2" style="white-space: nowrap;">
+                                <span class="me-2 fw-bold text-dark">1.</span>
+                                <span class="me-2 fw-bold text-danger">ಪ್ರಮುಖ ಮಾಹಿತಿ: ಮಳೆ ಮತ್ತು ಇತರೆ ಅನಿಶ್ಚಿತ ಕಾರಣಗಳಿಂದ ಚಾರಣಗಳು ಕಡೆಯ ನಿಮಿಷದಲ್ಲಿ ಅಥವಾ ನೀವು ಬುಕ್‌ ಮಾಡಿದ ನಂತರ ರದ್ದಾಗಬಹುದು. ಆದುದರಿಂದ ಚಾರಣಕ್ಕೂ ಮುನ್ನಾ ದಿನ ಸಂಬಂಧಿಸಿದ ವಿಭಾಗ ಕಛೇರಿಯಲ್ಲಿ ಚಾರಣ ಕೈಗೊಳ್ಳಬಹುದಾದ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು ಸೂಚಿಸಿದೆ. Important note:  The treks may be cancelled during the last minute or after you have booked the trek due to monsoon rains and other unforseen reasons. It is advised to confirm if treks are open, from concerned division offices, atleast a day before the date of trek and proceed after confirmation.</span>
+                            </li>
+                                                    <li class="list-group-item d-flex align-items-center py-2" style="white-space: nowrap;">
+                                <span class="me-2 fw-bold text-dark">2.</span>
+                                <span class="me-2 fw-bold text-danger">ಎಲ್ಲಾ ಚಾರಣಿಗರ ಗಮನಕ್ಕೆ: ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಟೈಂ ಸ್ಲಾಟ್‌ ನ ಪ್ರಾರಂಭ ಸಮಯದ ಹತ್ತು ನಿಮಿಷದ ಮುಂಚಿತವಾಗಿ ಚಾರಣ ಪ್ರಾರಂಭ ಸ್ಥಳದಲ್ಲಿ ವರದಿ ಮಾಡಿಕೊಳ್ಳತಕ್ಕದ್ದು.  All trekkers to note: Please report to the start point of the trek atleast 10 mins prior to the start time of the slot opted by you.</span>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="spinner-overlay" style="display: none;">
+    <div class="spinner"></div>
+</div>
+
+       
+
+  
+
+
+
+    <section class="trek_available mt-3" id="booking-section">
+    <h6 class="trek_subheader">ಚಾರಣದ ಲಭ್ಯತೆಯನ್ನು ಹುಡುಕಿ</h6>
+    <div class="text-center trekkingunderline mb-4">
+        <img src="https://aranyavihaara.karnataka.gov.in/images/trekkingpopularline.svg" class="img-fluid trekkingpopularline" alt="trek3">
+    </div>
+    <div class="text-center">
+        <p class="text-danger">ಗಮನಿಸಿ :-Treks should be booked atleast 1 days in advance. Further, advance bookings are allowed only upto 15 days.</p>
+    </div>
+        <div class="container" id="cardSection">
+                <div class="card search_availability">
+                    <form method="POST" action="https://aranyavihaara.karnataka.gov.in/availability" id="myForm">
+                        <input type="hidden" name="_token" value="HqKG2DQKXFlH76U9v6H7k7lScB08q48APLuJWGbM" autocomplete="off">                        <div class="card-body" id="cardSection">
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="district" class="form-label fw-bold">ಜಿಲ್ಲೆ</label>
+                                    <select class="form-select" name="district" id="district" onchange="updateTreks()" required="">
+
+                                        <option value="">ಜಿಲ್ಲೆ ಆಯ್ಕೆ ಮಾಡಿ</option>
+                                        
+                                        <option value="21"> ಬೆ೦ಗಳೂರು ಗ್ರಾಮಾ೦ತರ</option>
+                                        
+                                        <option value="27"> ಚಾಮರಾಜನಗರ</option>
+                                        
+                                        <option value="28"> ಚಿಕ್ಕಬಳ್ಳಾಪುರ</option>
+                                        
+                                        <option value="17"> ಚಿಕ್ಕಮಗಳೂರು</option>
+                                        
+                                        <option value="24"> ದಕ್ಷಿಣ ಕನ್ನಡ</option>
+                                        
+                                        <option value="4"> ಕಲಬುರ್ಗಿ</option>
+                                        
+                                        <option value="25"> ಕೊಡಗು</option>
+                                        
+                                        <option value="19"> ಕೋಲಾರ</option>
+                                        
+                                        <option value="29"> ರಾಮನಗರ</option>
+                                        
+                                        <option value="15"> ಶಿವಮೊಗ್ಗ</option>
+                                        
+                                        <option value="16"> ಉಡುಪಿ</option>
+                                                                            </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="district" class="form-label fw-bold">ಚಾರಣದ ಹೆಸರು</label>
+                                    <select class="form-select" name="trek" id="trek" required="">
+                                        <option value="">ಚಾರಣವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="date" class="RequiredSymbol mb-2 fw-bold">ದಿನಾಂಕ</label>
+                                    <div class="input-group">
+                                        <input type="text" id="check_in" name="check_in" class="form-control" placeholder="dd-mm-yyyy" autocomplete="off" required="" readonly="">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+
+
+                                <div class="col-md-3">
+                                    <br>
+                                    <input type="submit" id="check_avail" class="btn btn-customavailability mt-2" value="ಲಭ್ಯತೆಯನ್ನು ಪರಿಶೀಲಿಸಿ" disabled="">
+                                </div>
+
+                            </div>
+                        </div>
+                </form></div>
+
+        </div>
+    
+    </section></main></div>
+
+
+
+
+<button id="scrollToTopBtn" title="Go to top">
+    <h1><i class="bi bi-arrow-up-short"></i></h1>
+</button>
+
+<section class="populartrekking mt-5">
+    <h6 class="trek_subheader">ಜನಪ್ರಿಯ ಚಾರಣ ತಾಣಗಳು</h6>
+    <div class="text-center trekkingunderline mb-4">
+        <img src="https://aranyavihaara.karnataka.gov.in/images/trekkingtypeline.svg" class="img-fluid trekkingpopularline" alt="trek3">
+    </div>
+    <div class="row p-3" id="cardSection">
+        
+            <div class="col-md-4 col1-100 mb-3">
+            <div class="showcase-trek">
+                <img src="https://aranyavihaara.karnataka.gov.in/images/pop-trek/Brahmagiri.png" class="img-fluid trekkingpopularline" alt="trek3">
+                    <div class="popular_card meta">
+                        <p class="card-text">
+                                </p><div class="row">
+                                    <div class="col-md-12 trekking_border">
+                                        <h5 class="popular_blue">ಬ್ರಹ್ಮಗಿರಿ</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 trekking_border">
+                                        <h5 class="popular_blue">ಕೊಡಗು</h5>
+                                    </div>
+                                </div>
+                                <p class="paragraph_text mt-2">ನಿಸರ್ಗದ ಮಡಿಲಿನಲ್ಲಿ ಸಾಗುವ 24 ಕಿಮೀ ಅಂತರದ ಈ ಸುಂದರವಾದ ಚಾರಣವು ಇರ್ಪು ಜಲಪಾತ, ಶೋಲಾ ಕಾಡುಗಳು ಮತ್ತು ಹುಲ್ಲುಗಾವಲುಗಳ ನಡುವೆ ಸಾಗುತ್ತದೆ. ಅಸಂಖ್ಯಾತ ಸಸ್ಯ, ಪ್ರಾಣಿ ಸಂಕುಲಗಳ, ಹೂ- ಚಿಟ್ಟೆಗಳ, ಸರೀಸೃಪಗಳ ವಿಸ್ಮಯಕಾರಿ ದೃಶ್ಯಾವಳಿಗಳನ್ನು  ನೀಡುತ್ತದೆ.</p>
+                        <p></p>
+                    </div>
+            </div>
+        </div>
+
+        
+            <div class="col-md-4 col1-100 mb-3">
+            <div class="showcase-trek">
+                <img src="https://aranyavihaara.karnataka.gov.in/images/pop-trek/pop-trek2.jpg" class="img-fluid trekkingpopularline" alt="trek3">
+                    <div class="popular_card meta">
+                        <p class="card-text">
+                                </p><div class="row">
+                                    <div class="col-md-12 trekking_border">
+                                        <h5 class="popular_blue">ತಲಕಾವೇರಿ-ನಿಶಾನಿಮೊಟ್ಟೆ</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 trekking_border">
+                                        <h5 class="popular_blue"> ಕೊಡಗು</h5>
+                                    </div>
+                                </div>
+                                <p class="paragraph_text mt-2">ನಿಶಾನಿ ಬೆಟ್ಟ ಅಥವಾ ನಿಶಾನಿ ಮೊಟ್ಟೆ ಶಿಖರ ಕೊಡಗಿನ ತಲಕಾವೇರಿ-ಬ್ರಹ್ಮಗಿರಿ ಶ್ರೇಣಿಯಲ್ಲಿರುವ ನಿಗೂಢ ಮತ್ತು ಅತ್ಯಂತ ಸುಂದರವಾದ ಶಿಖರವಾಗಿದೆ. ಈ ಶಿಖರವು  ಅಂದಾಜು 60 ಡಿಗ್ರಿ ಏರು ಹಾದಿಯನ್ನು ಹೊಂದಿದ್ದು,  ಇದು ಸವಾಲಿನ ಮತ್ತು ಅಷ್ಟೇ ಮೈನವಿರೇಳಿಸುವ ಚಾರಣವಾಗಿದೆ.</p>
+                        <p></p>
+                    </div>
+            </div>
+        </div>
+        
+            <div class="col-md-4 col1-100 mb-3">
+            <div class="showcase-trek">
+                <img src="https://aranyavihaara.karnataka.gov.in/images/pop-trek/Nagamale.png" class="img-fluid trekkingpopularline" alt="trek3">
+                    <div class="popular_card meta">
+                        <p class="card-text">
+                                </p><div class="row">
+                                    <div class="col-md-12 trekking_border">
+                                        <h5 class="popular_blue">ನಾಗಮಲೈ</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 trekking_border">
+                                        <h5 class="popular_blue">ಚಾಮರಾಜನಗರ</h5>
+                                    </div>
+                                </div>
+                                <p class="paragraph_text mt-2">ಮಲೈ ಮಹದೇಶ್ವರ ಬೆಟ್ಟ ಶ್ರೇಣಿಗಳ 77 ಮಲೈಗಳಲ್ಲಿ ನಾಗಮಲೈ ಕೂಡ ಒಂದು. ಈ ಸ್ಥಳವನ್ನು ಪವಿತ್ರವೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ ಏಕೆಂದರೆ ಇಲ್ಲಿರುವ ಬಂಡೆಯು ಹಾವಿನ ಹೊದಿಕೆಯ ಅಡಿಯಲ್ಲಿ ಸೂರ್ಯನ ಕಿರಣಗಳಿಂದ ಆಶ್ರಯ ಪಡೆದಿರುವ ಶಿವಲಿಂಗವನ್ನು ಹೋಲುತ್ತದೆ.</p>
+                        <p></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="spinner-overlay" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+</section>
+
+
+<script>
+
+$(document).ready(function() {
+    function fetchBlockedDates() {
+        var trekId = $('#trek').val();
+        $.ajax({
+            url: 'https://aranyavihaara.karnataka.gov.in/get-blocked-dates',
+            method: 'POST',
+            data: {
+                _token: 'HqKG2DQKXFlH76U9v6H7k7lScB08q48APLuJWGbM',
+                district_id: $('#district').val(),
+                trek_id: trekId
+            },
+            success: function(response) {
+    $('#spinner-overlay').show();
+    setTimeout(function () {
+        hideSpinner();
+    }, 1000);
+ 
+    let today = new Date();
+    // let today = new Date('2025-07-24T00:00:00'); // year-month-dayThour:minute:second
+
+    // let minDate = new Date();
+    // minDate.setDate(today.getDate() + 3);
+    // let maxDate = new Date();
+    // maxDate.setDate(today.getDate() + 30);
+
+    let minDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+    let maxDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 15);
+
+ 
+    // Reinitialize datepicker with the new blocked dates
+    $('#check_in').datepicker('destroy').datepicker({
+        startDate: minDate,
+        endDate: maxDate,
+        format: 'dd-mm-yyyy',
+        autoclose: true,
+        datesDisabled: response.blockedDates,
+        beforeShowDay: function(date) {
+            let formattedDate = ('0' + date.getDate()).slice(-2) + '-' +
+                                ('0' + (date.getMonth() + 1)).slice(-2) + '-' +
+                                date.getFullYear();
+           
+            if (response.blockedDates.includes(formattedDate)) {
+                return {
+                    classes: 'text-danger', // Add red color to disabled dates
+                    tooltip: 'This Trek is blocked on this date'
+                };
+            }
+        }
+    });
+ 
+ 
+                document.getElementById('check_avail').disabled = false;
+
+                 // Schedule reinitialization at 12:00 AM
+                    setTimeout(function () {
+                        fetchBlockedDates(); // Refresh the datepicker at midnight
+
+                        // Optional: keep refreshing every 24 hrs thereafter
+                        setInterval(fetchBlockedDates, 24 * 60 * 60 * 1000); // every 24 hrs
+                    }, millisecondsUntilMidnight());
+                    }
+        });
+    }
+ 
+    $('#trek').change(function() {
+        fetchBlockedDates();
+    });
+});
+function updateTreks() {
+            var districtId = $('#district').val();
+            var currentLocale = 'en';
+            if (districtId) {
+                $.ajax({
+                    url: "https://aranyavihaara.karnataka.gov.in/get-treks"
+                    , type: "POST"
+                    , data: {
+                        _token: "HqKG2DQKXFlH76U9v6H7k7lScB08q48APLuJWGbM"
+                        , district_id: districtId
+                    }
+                    , success: function(data) {
+
+                        $('#trek').empty();
+
+                     if (data.length > 0) {
+                        $('#trek').append('<option value="">ಚಾರಣವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</option>');
+                        $.each(data, function(key, trek) {
+
+                            var trekName = currentLocale === 'kn' ? trek.name : trek.name_kn;
+                            $('#trek').append('<option value="' + trek.id + '">' + trekName + '</option>');
+
+                        });
+                    } else {
+                        $('#trek').append('<option selected>No Treks Available</option>');
+                    }
+
+                    fetchBlockedDates();
+                }
+                , error: function() {
+                    alert('Error retrieving treks');
+                }
+            });
+        }
+    }
+
+
+        function setDropdownValues(districtValue, districtLabel, trekValue, trekLabel) {
+            $('#district').empty().append('<option value="' + districtValue + '" selected>' + districtLabel + '</option>')
+                .trigger('change');
+
+            setTimeout(function() {
+                $('#trek').empty().append('<option value="' + trekValue + '" selected>' + trekLabel + '</option>');
+            }, 500);
+
+            window.scrollBy(10, -600);
+        }
+
+
+        function showSpinner() {
+        document.getElementById('spinner-overlay').style.display = 'flex';
+    }
+
+    function hideSpinner() {
+        document.getElementById('spinner-overlay').style.display = 'none';
+    }
+    </script>
+    <script>
+        let mybutton = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <script>
+        function disablePastDates() {
+            var today = new Date();
+            today.setDate(today.getDate() + 4);
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0');
+            var yyyy = today.getFullYear();
+
+            var minDate = yyyy + '-' + mm + '-' + dd;
+            document.getElementById("check_in").setAttribute("min", minDate);
+        }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script>
+     function showSpinner() {
+        document.getElementById('spinner-overlay').style.display = 'flex';
+    }
+
+    function hideSpinner() {
+        document.getElementById('spinner-overlay').style.display = 'none';
+    }
+</script>
+
+
+
+<style>
+      #spinner-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    </style>
+
+
+        
+        <div class="footer">
+    <div class="footer_bgimg">
+        <div class="container footer_top">
+            <div class="row">
+                <div class="col-md-5 mt-3">
+                    <div class="d-flex">
+                        <a href="https://aranyavihaara.karnataka.gov.in">
+                            <img src="https://aranyavihaara.karnataka.gov.in/images/Seal_of_Karnataka.png" alt="Logo" class="img-fluid gov_logo mt-2"></a>
+                        <div class="text-white text-center mt-3">
+                            <h6>ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ</h6>
+                            <p>ಕರ್ನಾಟಕ ಸರ್ಕಾರ</p>
+                        </div>
+                    </div>
+                    <div class="location_text mt-3">
+                        <i class="bi bi-geo-alt" alt="address icon" title="address_icon"></i>
+                        ಅರಣ್ಯ ಭವನ, 18ನೇ ಕ್ರಾಸ್, ಮಲ್ಲೇಶ್ವರಂ, ಬೆಂಗಳೂರು 560003
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-3 mt-3">
+                    <div class="mail_text mt-2">
+                        <a href="mailto:forest@gmail.com">
+                            <h6> <i class="bi bi-envelope" alt="mail icon" title="Mail Icon"></i> ಇಮೇಲ್ ಐಡಿ</h6>
+                            book-a-trek@aranya.gov.in
+                        </a>
+                    </div>
+                    <div class="ph_phone_text mt-3">
+                        <a href="callto:9876543210">
+                            <h6><i class="bi bi-telephone" alt="phone" title="Phone Icon"></i> ಸಹಾಯವಾಣಿ</h6>
+                            &nbsp; 1926
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6 text-center">
+                    <h6 class="quict_links mb-4 mt-3" style="color:#fff">
+                        ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು
+                    </h6>
+                    <ul class="paragrahp_text d-flex flex-wrap justify-content-center align-items-center">
+                                                                        <li class="nav-item"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/admin">ನಿರ್ವಾಹಕ</a></li>
+                                                                        
+                        <li class="nav-item"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in">ಮುಖಪುಟ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/aboutus">ನಮ್ಮ ಬಗ್ಗೆ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/#booking-section">ಬುಕಿಂಗ್ </a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/contactus">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</a></li>
+                        
+                                            </ul>
+                    
+                                        <p class="mt-3">ಸಂದರ್ಶಕರ ಕೌಂಟರ್ : 28888</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="policy_text text-center mb-4 mt-3" style="color:#fff">
+                        ನೀತಿ
+                    </h6>
+                    <ul class="paragrahp_text d-flex flex-wrap justify-content-center align-items-center">
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/termsandcondition"> ನಿಬಂಧನೆಗಳು ಮತ್ತು ಷರತ್ತುಗಳು</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/disclaimer">ಹಕ್ಕುತ್ಯಾಗ</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/privacyandpolicy"> ಗೌಪ್ಯತಾ ನೀತಿ</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/copyrightspolicy"> ಕೃತಿಸ್ವಾಮ್ಯ ನೀತಿ</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/hyperlinkingpolicy"> ಹೈಪರ್‌ ಲಿಂಕ್‌ ನೀತಿ</a></li>
+                        
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/cancellationpolicy"> ರದ್ದತಿ ಮತ್ತು ಮರುಪಾವತಿ ನೀತಿ</a></li>
+                        
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/sitemap"> ಜಾಲತಾಣದ ನಕ್ಷೆ</a></li>
+                              <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/booking-status"> ಬುಕಿಂಗ್/ಮರುಪಾವತಿ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</a></li>
+                        
+                        <li class="nav-item mb-3"><a class="nav-link" href="https://aranyavihaara.karnataka.gov.in/payment-status"> ಪಾವತಿ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="footerline">
+        <div class="ftext">
+
+            <div class="ft1">ಕಂಟೆಂಟ್ ಮಾಲೀಕತ್ವ ಮತ್ತು ನಿರ್ವಹಣೆ : ಕರ್ನಾಟಕ ಅರಣ್ಯ ಇಲಾಖೆ, ಕರ್ನಾಟಕ ಸರ್ಕಾರ
+            </div>
+
+            <div class="ft1">ವಿನ್ಯಾಸ ಮತ್ತು ಅಭಿವೃದ್ಧಿ: <a href="https://csg.karnataka.gov.in/" target="_blank">ಸೆಂಟರ್ ಫಾರ್ ಸ್ಮಾರ್ಟ್ ಗವರ್ನನ್ಸ್ </a>, ಕರ್ನಾಟಕ ಸರ್ಕಾರ</div>
+            <small>Copyright © 2025. All Rights Reserved.</small>
+        </div>
+
+    </div>
+</div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMTHDzblE-YBjsOGvmwUL1Ok2Sz2OystU"></script>
+
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+
+<script>
+    AOS.init();
+  </script>
+
+
+
+
+<script type="text/javascript">
+        var themeColor;
+        var originalSize = 16;
+
+        $(document).ready(function () {
+
+            // Retrieve the theme color from session storage if it exists
+            themeColor = sessionStorage.getItem("themeColor");
+            // Apply the theme color if it is set to "black"
+            if (themeColor === "black") {
+                $('h2,p,span,a,section,li,h1,h2,h3,h4,h5,h6,marquee,nav,header,button,div,body,navbar,td,th, footer, img').css("background-color", themeColor);
+                $('h2,p,span,a,section,li,h1,h2,h3,h4,h5,h6,marquee,nav,header,button,div,body,navbar,td,th, img').css("color", "white");
+                $(".captcha-img").css("background-color", "white");
+            }
+        });
+
+        function changeColor() {
+            sessionStorage.setItem("themeColor", "black");
+            myfunction();
+        }
+
+        function defaultColor() {
+            sessionStorage.setItem("themeColor", "transparent");
+            myfunction();
+        }
+
+        function myfunction() {
+            if (sessionStorage.getItem("currentFontSize") != null || sessionStorage.getItem("currentFontSize") != '') {
+                $('body, *').css('font-size', sessionStorage.getItem("currentFontSize") + 'px');
+
+            }
+
+            if (sessionStorage.getItem("themeColor") === "black") {
+                themeColor = "black";
+                $('h2,p,span,a,section,li,h1,h2,h3,h4,h5,h6,marquee,nav,header,button,div,body,navbar,td,th, footer,i').css("background-color", themeColor);
+                $('h2,p,span,a,section,li,h1,h2,h3,h4,h5,h6,marquee,nav,header,button,div,body,navbar,td,th,i').css("color", "white");
+                $(".captcha-img").css("background-color", "white");
+            } else if (sessionStorage.getItem("themeColor") === "transparent") {
+                $(".captcha-img").css("background-color", "transparent");
+                sessionStorage.clear();
+                location.reload();
+            }
+        }
+
+        $('#increasetext').click(function () {
+            var curSize = sessionStorage.getItem("currentFontSize") != null ? (JSON.parse(sessionStorage.getItem("currentFontSize")) + 2) : originalSize + 2;
+            if (curSize <= 20) {
+                $('body, *').css('font-size', curSize);
+                sessionStorage.setItem("currentFontSize", curSize);
+            }
+        });
+
+        $('#resettext').click(function () {
+            sessionStorage.removeItem("currentFontSize");
+            location.reload();
+        });
+
+        $('#decreasetext').click(function () {
+            var curSize = sessionStorage.getItem("currentFontSize") != null ? (JSON.parse(sessionStorage.getItem("currentFontSize")) - 2) : originalSize - 2;
+            if (curSize >= 14) {
+                $('body, *').css('font-size', curSize);
+                sessionStorage.setItem("currentFontSize", curSize);
+            }
+        });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".showcase-carousel").owlCarousel({
+            items: 10,
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            center: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    center: false,
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                },
+                1400: {
+                    items: 4
+                }
+            },
+            onTranslated: function(event) {
+                var items = event.item.count;
+                var currentItem = event.item.index;
+                $('.showcase-carousel .item').removeClass('active');
+                $('.showcase-carousel .item').eq(currentItem - 1).addClass('active');
+                $('.showcase-carousel .item').eq(currentItem).addClass('active');
+                $('.showcase-carousel .item').eq(currentItem + 1).addClass('active');
+            }
+        });
+
+        // Initial setup
+        var owl = $(".showcase-carousel").data('owl.carousel');
+        $('.showcase-carousel .item').eq(owl.current() - 1).addClass('active');
+        $('.showcase-carousel .item').eq(owl.current()).addClass('active');
+        $('.showcase-carousel .item').eq(owl.current() + 1).addClass('active');
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+
+        $('#toggle-lang').click(function() {
+        dd('hi');
+
+            var locale = $(this).data('locale');
+            $.ajax({
+                url: '/api/lang',
+                type: 'POST',
+                data: {
+                    _token: 'HqKG2DQKXFlH76U9v6H7k7lScB08q48APLuJWGbM',
+                    locale: locale
+                },
+                success: function(response) {
+                    if (response.status === 'success') {
+                        location.reload();  // reload to apply changes (or modify DOM elements directly)
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+
+
+            
+
+
+
+</body></html>
