@@ -10,7 +10,6 @@ export default function Home() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [loadingSync, setLoadingSync] = useState(false);
   const [loadingInitial, setLoadingInitial] = useState(true);
-  const [englishOnly, setEnglishOnly] = useState(false);
 
   useEffect(() => {
     fetchCache();
@@ -81,19 +80,6 @@ export default function Home() {
             ) : '↻ Refresh Availability'}
           </button>
         </div>
-        
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <input 
-            type="checkbox" 
-            id="englishOnly" 
-            checked={englishOnly} 
-            onChange={(e) => setEnglishOnly(e.target.checked)}
-            style={{ width: '1.2rem', height: '1.2rem', accentColor: 'var(--accent-color)', cursor: 'pointer' }}
-          />
-          <label htmlFor="englishOnly" style={{ fontSize: '1rem', color: '#cbd5e1', cursor: 'pointer', margin: 0 }}>
-            Show English names only
-          </label>
-        </div>
       </div>
 
       {loadingInitial ? (
@@ -108,16 +94,10 @@ export default function Home() {
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {cachedItems.map((item, idx) => {
-            const formatName = (text: string) => {
-              if (!englishOnly) return text;
-              const englishText = text.replace(/[\u0C80-\u0CFF]/g, '').replace(/[-\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
-              return englishText || text; // fallback if stripping removes everything
-            };
-
             return (
               <div key={idx} className="glass-panel" style={{ padding: '1.5rem', marginBottom: 0 }}>
                 <h3 style={{ fontSize: '1.4rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1.5rem', color: '#f8fafc' }}>
-                  <span style={{ color: 'var(--accent-color)', fontWeight: 800 }}>{formatName(item.district.text)}</span> <span style={{ opacity: 0.5 }}>&mdash;</span> {formatName(item.trek.text)}
+                  <span style={{ color: 'var(--accent-color)', fontWeight: 800 }}>{item.district.text}</span> <span style={{ opacity: 0.5 }}>&mdash;</span> {item.trek.text}
                 </h3>
                 
                 {(() => {
