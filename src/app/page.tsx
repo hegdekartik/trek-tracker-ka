@@ -100,29 +100,33 @@ export default function Home() {
                   <span style={{ color: '#34d399' }}>{item.district.text}</span> &mdash; {item.trek.text}
                 </h3>
                 
-                {item.availability.length === 0 ? (
-                  <p style={{ color: '#64748b' }}>No availability calendar found for this trek.</p>
-                ) : (
-                  <div className="calendar-grid" style={{ marginTop: 0 }}>
-                    {item.availability.map((day, i) => {
-                      const cleanText = day.text.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-                      const isAvailable = day.isAvailable;
-                      const statusClass = isAvailable ? 'available' : 'full';
-                      
-                      return (
-                        <div key={i} className={`day-card ${statusClass}`} style={{ padding: '1rem', minHeight: '100px' }}>
-                          <div className="date-text" style={{ fontSize: '1rem' }}>{day.date || i + 1}</div>
-                          <div className={`status-badge ${statusClass}`} style={{ margin: '0.25rem 0' }}>
-                            {isAvailable ? 'Open' : 'Full / Closed'}
+                {(() => {
+                  const availableDays = item.availability.filter(d => d.isAvailable);
+                  if (availableDays.length === 0) {
+                    return <p style={{ color: '#64748b', fontStyle: 'italic' }}>No open slots available in the next 15 days.</p>;
+                  }
+
+                  return (
+                    <div className="calendar-grid" style={{ marginTop: 0 }}>
+                      {availableDays.map((day, i) => {
+                        let formattedDate = day.date;
+                        try {
+                          const [d, m, y] = day.date.split('-');
+                          const dateObj = new Date(parseInt(y), parseInt(m) - 1, parseInt(d));
+                          const dayOfWeek = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+                          const month = dateObj.toLocaleDateString('en-US', { month: 'short' });
+                          formattedDate = `${dayOfWeek}, ${parseInt(d)} ${month}`;
+                        } catch (e) {}
+                        
+                        return (
+                          <div key={i} className="day-card available" style={{ padding: '1rem', minHeight: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <div className="date-text" style={{ fontSize: '1.1rem', color: '#34d399', margin: 0 }}>{formattedDate}</div>
                           </div>
-                          <div style={{ fontSize: '0.75rem', color: '#94a3b8', wordBreak: 'break-word', overflow: 'hidden' }}>
-                            {cleanText.substring(0, 30)}
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
+                        );
+                      })}
+                    </div>
+                  );
+                })()}
               </div>
             )
           })}
