@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
 
 :root {
-  --bg-color: #0f172a;
-  --text-color: #f8fafc;
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --accent-color: #10b981;
-  --accent-hover: #059669;
+  --bg-color: #022c22; /* rich dark green */
+  --text-color: #f0fdf4;
+  --glass-bg: rgba(6, 78, 59, 0.4);
+  --glass-border: rgba(16, 185, 129, 0.2);
+  --accent-color: #10b981; /* bright emerald */
+  --accent-hover: #34d399;
   --danger-color: #ef4444;
   --warning-color: #f59e0b;
 }
@@ -21,9 +21,9 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-color);
   background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,0.2) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,0.2) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(6, 78, 59, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgba(4, 120, 87, 0.2) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgba(6, 95, 70, 0.4) 0, transparent 50%);
   background-attachment: fixed;
   color: var(--text-color);
   min-height: 100vh;
@@ -46,9 +46,8 @@ header {
 h1 {
   font-size: 3rem;
   font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #34d399, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-color);
+  text-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
   margin-bottom: 0.5rem;
 }
 
@@ -145,7 +144,7 @@ button:disabled {
 }
 
 .day-card {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(2, 44, 34, 0.6);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   padding: 1.5rem 1rem;

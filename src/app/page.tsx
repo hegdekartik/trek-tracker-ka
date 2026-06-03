@@ -10,6 +10,7 @@ export default function Home() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [loadingSync, setLoadingSync] = useState(false);
   const [loadingInitial, setLoadingInitial] = useState(true);
+  const [englishOnly, setEnglishOnly] = useState(false);
 
   useEffect(() => {
     fetchCache();
@@ -59,26 +60,40 @@ export default function Home() {
   return (
     <div className="container">
       <header>
-        <h1>Aranya Vihaara</h1>
-        <p className="subtitle">Automated Master Database Tracker</p>
+        <h1>Aranya Vihara Tracker</h1>
       </header>
 
-      <div className="glass-panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-        <div>
-          <h2 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Global Availability Cache</h2>
-          <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
-            {lastUpdated ? `Last updated: ${new Date(lastUpdated).toLocaleString()}` : 'No data cached yet.'}
-          </p>
+      <div className="glass-panel" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <h2 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#e2e8f0' }}>Availability Overview</h2>
+            <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>
+              {lastUpdated ? `Last updated: ${new Date(lastUpdated).toLocaleString()}` : 'No data loaded yet.'}
+            </p>
+          </div>
+          <button 
+            onClick={handleSyncAll} 
+            disabled={loadingSync}
+            style={{ background: loadingSync ? '#475569' : 'var(--accent-color)' }}
+          >
+            {loadingSync ? (
+               <><span className="loading-spinner"></span> Checking dates...</>
+            ) : '↻ Refresh Availability'}
+          </button>
         </div>
-        <button 
-          onClick={handleSyncAll} 
-          disabled={loadingSync}
-          style={{ background: loadingSync ? '#475569' : 'linear-gradient(45deg, #10b981, #059669)' }}
-        >
-          {loadingSync ? (
-             <><span className="loading-spinner"></span> Syncing database... (May take 3+ mins)</>
-          ) : '🔁 Sync All Datasets'}
-        </button>
+        
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <input 
+            type="checkbox" 
+            id="englishOnly" 
+            checked={englishOnly} 
+            onChange={(e) => setEnglishOnly(e.target.checked)}
+            style={{ width: '1.2rem', height: '1.2rem', accentColor: 'var(--accent-color)', cursor: 'pointer' }}
+          />
+          <label htmlFor="englishOnly" style={{ fontSize: '1rem', color: '#cbd5e1', cursor: 'pointer', margin: 0 }}>
+            Show English names only
+          </label>
+        </div>
       </div>
 
       {loadingInitial ? (
@@ -93,11 +108,16 @@ export default function Home() {
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {cachedItems.map((item, idx) => {
-            // Group by district -> trek
+            const formatName = (text: string) => {
+              if (!englishOnly) return text;
+              const englishText = text.replace(/[\u0C80-\u0CFF]/g, '').replace(/[-\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+              return englishText || text; // fallback if stripping removes everything
+            };
+
             return (
               <div key={idx} className="glass-panel" style={{ padding: '1.5rem', marginBottom: 0 }}>
-                <h3 style={{ fontSize: '1.4rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>
-                  <span style={{ color: '#34d399' }}>{item.district.text}</span> &mdash; {item.trek.text}
+                <h3 style={{ fontSize: '1.4rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '0.5rem', marginBottom: '1.5rem', color: '#f8fafc' }}>
+                  <span style={{ color: 'var(--accent-color)', fontWeight: 800 }}>{formatName(item.district.text)}</span> <span style={{ opacity: 0.5 }}>&mdash;</span> {formatName(item.trek.text)}
                 </h3>
                 
                 {(() => {
