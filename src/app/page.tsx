@@ -10,23 +10,20 @@ export default function Home() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [loadingSync, setLoadingSync] = useState(false);
   const [loadingInitial, setLoadingInitial] = useState(true);
+  const [loadingMessage, setLoadingMessage] = useState("");
 
   useEffect(() => {
     fetchCache();
   }, []);
 
-  const fetchCache = async () => {
+  const fetchCache = () => {
     setLoadingInitial(true);
     try {
-      const res = await fetch('/api/scrape', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'getCache' })
-      });
-      const data = await res.json();
-      if (data.data) {
-        setCachedItems(data.data);
-        setLastUpdated(data.lastUpdated);
+      const cache = localStorage.getItem('trek_cache');
+      if (cache) {
+        const parsed = JSON.parse(cache);
+        setCachedItems(parsed.data);
+        setLastUpdated(parsed.lastUpdated);
       }
     } catch (e) {
       console.error(e);
@@ -35,25 +32,57 @@ export default function Home() {
   };
 
   const handleSyncAll = async () => {
-    if (!confirm("This will scrape all districts and treks. It may take several minutes. Continue?")) return;
+    if (!confirm("This will fetch live data directly from the portal. It may take a minute. Continue?")) return;
     
     setLoadingSync(true);
     try {
+      setLoadingMessage("Fetching districts...");
       const res = await fetch('/api/scrape', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'syncAll' })
+        body: JSON.stringify({ action: 'getDistricts' })
       });
-      const data = await res.json();
-      if (data.data) {
-        setCachedItems(data.data);
-        setLastUpdated(data.lastUpdated);
+      const { districts } = await res.json();
+      
+      const newCache = [];
+      
+      for (const d of districts) {
+        setLoadingMessage(`Finding treks in ${d.text}...`);
+        const tRes = await fetch('/api/scrape', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'getTreks', district: d.value })
+        });
+        const { treks } = await tRes.json();
+        
+        for (const t of treks) {
+          setLoadingMessage(`Checking ${t.text}...`);
+          const aRes = await fetch('/api/scrape', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'getAvailability', district: d.value, trek: t.value })
+          });
+          const { availability } = await aRes.json();
+          
+          newCache.push({ district: d, trek: t, availability });
+          setCachedItems([...newCache]); // progressive update
+        }
       }
+      
+      const cacheData = {
+        lastUpdated: new Date().toISOString(),
+        data: newCache
+      };
+      
+      localStorage.setItem('trek_cache', JSON.stringify(cacheData));
+      setLastUpdated(cacheData.lastUpdated);
+      
     } catch (e) {
       console.error(e);
       alert("Failed to sync. Please try again.");
     }
     setLoadingSync(false);
+    setLoadingMessage("");
   };
 
   return (
@@ -76,7 +105,7 @@ export default function Home() {
             style={{ background: loadingSync ? '#475569' : 'var(--accent-color)' }}
           >
             {loadingSync ? (
-               <><span className="loading-spinner"></span> Checking dates...</>
+               <><span className="loading-spinner"></span> {loadingMessage || 'Checking dates...'}</>
             ) : '↻ Refresh Availability'}
           </button>
         </div>

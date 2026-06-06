@@ -1,6 +1,4 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import { ARANYA_API } from '@/config/api';
 
 // --- Utility Functions ---
@@ -75,20 +73,6 @@ async function fetchBlockedDates(districtId: string, trekId: string, token: stri
 export async function POST(request: Request) {
   const body = await request.json();
   const { action, district, trek } = body;
-  
-  const cachePath = path.join(process.cwd(), 'data', 'cache.json');
-
-  if (action === 'getCache') {
-    try {
-      if (fs.existsSync(cachePath)) {
-        const cache = fs.readFileSync(cachePath, 'utf8');
-        return NextResponse.json(JSON.parse(cache));
-      }
-      return NextResponse.json({ lastUpdated: null, data: [] });
-    } catch (e: any) {
-      return NextResponse.json({ error: e.message }, { status: 500 });
-    }
-  }
 
   try {
     const auth = await getSessionAuth();
@@ -117,46 +101,6 @@ export async function POST(request: Request) {
       });
 
       return NextResponse.json({ availability: calendarData });
-    }
-
-    if (action === 'syncAll') {
-      const results: any[] = [];
-      const { districts, token, cookies } = auth;
-
-      for (const d of districts) {
-        // To be polite to the server and prevent IP bans, add a small delay
-        await new Promise(r => setTimeout(r, 500)); 
-        
-        const treks = await fetchTreks(d.value, token, cookies);
-        for (const t of treks) {
-          const blockedDates = await fetchBlockedDates(d.value, t.value, token, cookies);
-          const dateWindow = getNext15Days();
-          
-          const calendarData = dateWindow.map(date => {
-            const isAvailable = !blockedDates.includes(date);
-            return {
-              date,
-              text: isAvailable ? 'Available' : 'Full / Blocked',
-              bg: isAvailable ? 'rgb(0, 128, 0)' : 'transparent',
-              isAvailable
-            };
-          });
-
-          results.push({ district: d, trek: t, availability: calendarData });
-        }
-      }
-
-      const cacheData = {
-        lastUpdated: new Date().toISOString(),
-        data: results
-      };
-
-      if (!fs.existsSync(path.join(process.cwd(), 'data'))) {
-        fs.mkdirSync(path.join(process.cwd(), 'data'));
-      }
-      fs.writeFileSync(cachePath, JSON.stringify(cacheData, null, 2));
-
-      return NextResponse.json(cacheData);
     }
 
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
