@@ -20,6 +20,10 @@ async function getSessionAuth() {
     headers: { ...ARANYA_API.DEFAULT_HEADERS, 'Accept': 'text/html' }
   });
   
+  if (!res.ok) {
+    throw new Error(`Aranya Vihaara portal responded with ${res.status}. They might be blocking Vercel datacenter IPs.`);
+  }
+
   const html = await res.text();
   const cookieHeader = res.headers.get('set-cookie');
   let cookies = '';
@@ -34,6 +38,10 @@ async function getSessionAuth() {
   const districts = districtMatches
     .map(m => ({ value: m[1], text: m[2].trim() }))
     .filter(d => d.value !== '' && d.text && !d.text.includes('ಆಯ್ಕೆ ಮಾಡಿ'));
+
+  if (districts.length === 0) {
+    throw new Error('Failed to extract districts. The site structure may have changed, or Vercel IPs are being blocked by a security firewall.');
+  }
 
   return { token, cookies, districts };
 }

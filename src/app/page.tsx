@@ -42,7 +42,9 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'getDistricts' })
       });
-      const { districts } = await res.json();
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      const { districts } = data;
       
       const newCache = [];
       
@@ -53,7 +55,9 @@ export default function Home() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ action: 'getTreks', district: d.value })
         });
-        const { treks } = await tRes.json();
+        const tData = await tRes.json();
+        if (tData.error) throw new Error(tData.error);
+        const { treks } = tData;
         
         for (const t of treks) {
           setLoadingMessage(`Checking ${t.text}...`);
@@ -62,7 +66,9 @@ export default function Home() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ action: 'getAvailability', district: d.value, trek: t.value })
           });
-          const { availability } = await aRes.json();
+          const aData = await aRes.json();
+          if (aData.error) throw new Error(aData.error);
+          const { availability } = aData;
           
           newCache.push({ district: d, trek: t, availability });
           setCachedItems([...newCache]); // progressive update
@@ -77,9 +83,9 @@ export default function Home() {
       localStorage.setItem('trek_cache', JSON.stringify(cacheData));
       setLastUpdated(cacheData.lastUpdated);
       
-    } catch (e) {
+    } catch (e: any) {
       console.error(e);
-      alert("Failed to sync. Please try again.");
+      alert(`Failed to sync: ${e.message || 'Unknown error'}`);
     }
     setLoadingSync(false);
     setLoadingMessage("");
@@ -118,7 +124,7 @@ export default function Home() {
         </div>
       ) : cachedItems.length === 0 ? (
         <div className="empty-state">
-           <p>Database is empty. Click "Sync All Datasets" to scrape the latest availability.</p>
+           <p>Database is empty. Click "Refresh Availability" to fetch the latest dates from the portal.</p>
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
