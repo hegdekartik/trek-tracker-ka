@@ -6,6 +6,25 @@ type DayData = { date: string; text: string; bg: string; isAvailable: boolean };
 type CachedData = { district: Option, trek: Option, availability: DayData[] };
 type LanguageSetting = 'default' | 'english' | 'kannada';
 
+// Hardcoded translations for Districts since the API only returns Kannada
+const districtMap: Record<string, string> = {
+  'ಚಿಕ್ಕಬಳ್ಳಾಪುರ': 'Chikkaballapura',
+  'ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ': 'Bengaluru Rural',
+  'ದಕ್ಷಿಣ ಕನ್ನಡ': 'Dakshina Kannada',
+  'ಬೆಳಗಾವಿ': 'Belagavi',
+  'ಚಾಮರಾಜನಗರ': 'Chamarajanagara',
+  'ಕೊಡಗು': 'Kodagu',
+  'ಚಿಕ್ಕಮಗಳೂರು': 'Chikkamagaluru',
+  'ಉತ್ತರ ಕನ್ನಡ': 'Uttara Kannada',
+  'ಶಿವಮೊಗ್ಗ': 'Shivamogga',
+  'ಹಾಸನ': 'Hassan',
+  'ಉಡುಪಿ': 'Udupi',
+  'ಧಾರವಾಡ': 'Dharwad',
+  'ರಾಮನಗರ': 'Ramanagara',
+  'ತುಮಕೂರು': 'Tumakuru',
+  'ಮೈಸೂರು': 'Mysuru',
+};
+
 export default function Home() {
   // Global States
   const [language, setLanguage] = useState<LanguageSetting>('default');
@@ -15,7 +34,6 @@ export default function Home() {
   // Loading States
   const [loadingInitial, setLoadingInitial] = useState(true);
   const [loadingSync, setLoadingSync] = useState(false);
-  const [loadingMessage, setLoadingMessage] = useState("");
   
   // Dropdown States
   const [districts, setDistricts] = useState<Option[]>([]);
@@ -24,13 +42,11 @@ export default function Home() {
   const [selectedTrek, setSelectedTrek] = useState("");
   const [loadingDropdowns, setLoadingDropdowns] = useState(false);
 
-  // Init
   useEffect(() => {
     fetchCache();
     fetchDistricts();
   }, []);
 
-  // --- Core API Helpers ---
   const fetchCache = () => {
     setLoadingInitial(true);
     try {
@@ -58,7 +74,6 @@ export default function Home() {
     }
   };
 
-  // --- Handlers ---
   const handleDistrictChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
     const val = e.target.value;
     setSelectedDistrict(val);
@@ -85,7 +100,6 @@ export default function Home() {
     if (!selectedDistrict || !selectedTrek) return;
     
     setLoadingSync(true);
-    setLoadingMessage("Checking trek...");
     
     try {
       const dOpt = districts.find(d => d.value === selectedDistrict) || { value: selectedDistrict, text: 'Unknown' };
@@ -101,7 +115,6 @@ export default function Home() {
 
       const newItem = { district: dOpt, trek: tOpt, availability: data.availability };
       
-      // We will put this quick check result at the very top of our view, or replace the entire view
       setCachedItems([newItem]);
       setLastUpdated(new Date().toISOString());
       
@@ -110,7 +123,6 @@ export default function Home() {
     }
     
     setLoadingSync(false);
-    setLoadingMessage("");
   };
 
   const handleSyncAll = async () => {
@@ -118,7 +130,6 @@ export default function Home() {
     
     setLoadingSync(true);
     try {
-      setLoadingMessage("Fetching districts...");
       const res = await fetch('/api/scrape', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -131,7 +142,6 @@ export default function Home() {
       const newCache: CachedData[] = [];
       
       for (const d of fetchedDistricts) {
-        setLoadingMessage(`Finding treks in ${formatName(d.text)}...`);
         const tRes = await fetch('/api/scrape', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -141,7 +151,6 @@ export default function Home() {
         if (tData.error) throw new Error(tData.error);
         
         for (const t of tData.treks) {
-          setLoadingMessage(`Checking ${formatName(t.text)}...`);
           const aRes = await fetch('/api/scrape', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -167,21 +176,29 @@ export default function Home() {
       alert(`Failed to sync: ${e.message || 'Unknown error'}`);
     }
     setLoadingSync(false);
-    setLoadingMessage("");
   };
 
-  // --- Formatters ---
   const formatName = (text: string) => {
     if (language === 'default') return text;
     
+    let processed = text;
+    
+    // Auto-translate known districts to English if requested
     if (language === 'english') {
-      const englishText = text.replace(/[\u0C80-\u0CFF]/g, '').replace(/[-\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+      Object.keys(districtMap).forEach(kannadaKey => {
+        if (processed.includes(kannadaKey)) {
+          processed = processed.replace(kannadaKey, districtMap[kannadaKey]);
+        }
+      });
+      
+      // Strip remaining Kannada
+      const englishText = processed.replace(/[\u0C80-\u0CFF]/g, '').replace(/[-\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
       return englishText || text;
     }
     
     if (language === 'kannada') {
-      // Keep only Kannada unicode, spaces, and simple punctuation
-      const kannadaText = text.replace(/[a-zA-Z0-9]/g, '').replace(/[-\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+      // Strip English letters
+      const kannadaText = processed.replace(/[a-zA-Z0-9]/g, '').replace(/[-\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
       return kannadaText || text;
     }
     
@@ -239,10 +256,10 @@ export default function Home() {
           <button 
             onClick={handleSyncAll} 
             disabled={loadingSync}
-            style={{ flex: 1, background: loadingSync ? 'rgba(255,255,255,0.1)' : 'transparent', border: '1px solid var(--accent-color)', color: loadingSync ? '#fff' : 'var(--accent-color)', boxShadow: 'none' }}
+            style={{ flex: 1, background: loadingSync ? 'rgba(255,255,255,0.1)' : 'transparent', border: '1px solid var(--glass-border)', color: loadingSync ? '#fff' : 'var(--text-color)', boxShadow: 'none' }}
           >
             {loadingSync && !selectedTrek ? (
-               <><span className="loading-spinner"></span> {loadingMessage || 'Syncing...'}</>
+               <><span className="loading-spinner"></span> Syncing all...</>
             ) : '↻ Sync All Treks'}
           </button>
         </div>
@@ -261,40 +278,39 @@ export default function Home() {
       ) : (
         <div>
           {lastUpdated && cachedItems.length > 1 && (
-            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem', textAlign: 'right', fontSize: '0.9rem' }}>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1rem', textAlign: 'right', fontSize: '0.85rem' }}>
               Last sync: {new Date(lastUpdated).toLocaleString()}
             </p>
           )}
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {cachedItems.map((item, idx) => {
               const availableDays = item.availability.filter(d => d.isAvailable);
               
               return (
-                <div key={idx} className="glass-panel" style={{ padding: '1.5rem', marginBottom: 0 }}>
+                <div key={idx} className="glass-panel" style={{ padding: '1.25rem', marginBottom: 0 }}>
                   <h3>
                     <span style={{ color: 'var(--accent-color)' }}>{formatName(item.district.text)}</span> <span style={{ opacity: 0.3 }}>&mdash;</span> {formatName(item.trek.text)}
                   </h3>
                   
                   {availableDays.length === 0 ? (
-                    <p style={{ color: 'var(--text-muted)', fontStyle: 'italic', textAlign: 'center', padding: '2rem 0' }}>
+                    <p style={{ color: 'var(--text-muted)', fontStyle: 'italic', padding: '0.5rem 0' }}>
                       No open slots available in the next 15 days.
                     </p>
                   ) : (
-                    <div className="calendar-grid">
+                    <div className="pill-container">
                       {availableDays.map((day, i) => {
                         let formattedDate = day.date;
                         try {
                           const [d, m, y] = day.date.split('-');
                           const dateObj = new Date(parseInt(y), parseInt(m) - 1, parseInt(d));
-                          const dayOfWeek = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
                           const month = dateObj.toLocaleDateString('en-US', { month: 'short' });
-                          formattedDate = `${dayOfWeek}, ${parseInt(d)} ${month}`;
+                          formattedDate = `${parseInt(d)} ${month}`;
                         } catch (e) {}
                         
                         return (
-                          <div key={i} className="day-card available">
-                            <div className="date-text highlight">{formattedDate}</div>
+                          <div key={i} className="date-pill">
+                            {formattedDate}
                           </div>
                         );
                       })}
