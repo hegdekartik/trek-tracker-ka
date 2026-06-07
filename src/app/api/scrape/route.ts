@@ -1,4 +1,7 @@
 import { NextResponse } from 'next/server';
+
+export const runtime = 'edge';
+
 import { ARANYA_API } from '@/config/api';
 
 // --- Utility Functions ---
