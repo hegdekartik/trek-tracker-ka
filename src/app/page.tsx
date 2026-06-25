@@ -346,16 +346,24 @@ export default function Home() {
                       })}
                     </div>
                     {availableDays.some(day => selectedSlotDate === `${item.district.value}-${item.trek.value}-${day.date}`) && (
-                      <div style={{ marginTop: '1rem', padding: '1rem', background: '#111', borderRadius: '8px', border: '1px solid var(--glass-border)' }}>
+                      <div style={{ marginTop: '1rem', padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--glass-border)', textAlign: 'center' }}>
                         {loadingSlots ? (
-                          <div className="empty-state" style={{ padding: '0.5rem' }}><span className="loading-spinner"></span> Checking slots...</div>
+                          <div className="empty-state" style={{ padding: '0.5rem' }}><span className="loading-spinner"></span> Loading slots...</div>
                         ) : slotData && slotData.length > 0 ? (
-                          <div>
-                            <h4 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Available Timeslots:</h4>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
                             {slotData.map((slot, idx) => (
-                              <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem', borderBottom: idx === slotData.length - 1 ? 'none' : '1px solid #222' }}>
-                                <span style={{ fontWeight: 500 }}>{slot.time}</span>
-                                <span style={{ color: 'var(--accent-color)' }}>{slot.availability}</span>
+                              <div key={idx} style={{ 
+                                fontSize: '1.75rem', 
+                                fontWeight: '600', 
+                                color: 'var(--accent-color)',
+                                padding: '1rem 2rem',
+                                background: 'rgba(0,0,0,0.3)',
+                                borderRadius: '12px',
+                                display: 'inline-block',
+                                border: '1px solid rgba(255,255,255,0.05)',
+                                boxShadow: '0 4px 20px rgba(0,0,0,0.2)'
+                              }}>
+                                🎫 {slot.availability}
                               </div>
                             ))}
                           </div>
