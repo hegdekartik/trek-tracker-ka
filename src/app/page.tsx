@@ -320,7 +320,8 @@ export default function Home() {
                       No open slots available in the next 15 days.
                     </p>
                   ) : (
-                    <div className="pill-container">
+                    <>
+                      <div className="pill-container">
                       {availableDays.map((day, i) => {
                         let formattedDate = day.date;
                         try {
@@ -363,6 +364,7 @@ export default function Home() {
                         )}
                       </div>
                     )}
+                    </>
                   )}
                 </div>
               )
