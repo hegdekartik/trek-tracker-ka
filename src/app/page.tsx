@@ -42,6 +42,10 @@ export default function Home() {
   const [selectedTrek, setSelectedTrek] = useState("");
   const [loadingDropdowns, setLoadingDropdowns] = useState(false);
 
+  const [selectedSlotDate, setSelectedSlotDate] = useState<string | null>(null);
+  const [slotData, setSlotData] = useState<any[] | null>(null);
+  const [loadingSlots, setLoadingSlots] = useState(false);
+
   useEffect(() => {
     fetchCache();
     fetchDistricts();
@@ -178,6 +182,24 @@ export default function Home() {
     setLoadingSync(false);
   };
 
+  const fetchSlots = async (districtValue: string, trekValue: string, dateStr: string) => {
+    setSelectedSlotDate(`${districtValue}-${trekValue}-${dateStr}`);
+    setLoadingSlots(true);
+    setSlotData(null);
+    try {
+      const res = await fetch('/api/scrape', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'getSlots', district: districtValue, trek: trekValue, check_in: dateStr })
+      });
+      const data = await res.json();
+      if (data.slots) setSlotData(data.slots);
+    } catch (e) {
+      console.error(e);
+    }
+    setLoadingSlots(false);
+  };
+
   const formatName = (text: string) => {
     if (language === 'default') return text;
     
@@ -308,13 +330,39 @@ export default function Home() {
                           formattedDate = `${parseInt(d)} ${month}`;
                         } catch (e) {}
                         
+                        const isSelected = selectedSlotDate === `${item.district.value}-${item.trek.value}-${day.date}`;
+
                         return (
-                          <div key={i} className="date-pill">
+                          <div 
+                            key={i} 
+                            className="date-pill"
+                            style={{ cursor: 'pointer', background: isSelected ? 'var(--accent-color)' : '', color: isSelected ? '#000' : '' }}
+                            onClick={() => fetchSlots(item.district.value, item.trek.value, day.date)}
+                          >
                             {formattedDate}
                           </div>
                         );
                       })}
                     </div>
+                    {availableDays.some(day => selectedSlotDate === `${item.district.value}-${item.trek.value}-${day.date}`) && (
+                      <div style={{ marginTop: '1rem', padding: '1rem', background: '#111', borderRadius: '8px', border: '1px solid var(--glass-border)' }}>
+                        {loadingSlots ? (
+                          <div className="empty-state" style={{ padding: '0.5rem' }}><span className="loading-spinner"></span> Checking slots...</div>
+                        ) : slotData && slotData.length > 0 ? (
+                          <div>
+                            <h4 style={{ fontSize: '0.9rem', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Available Timeslots:</h4>
+                            {slotData.map((slot, idx) => (
+                              <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem', borderBottom: idx === slotData.length - 1 ? 'none' : '1px solid #222' }}>
+                                <span style={{ fontWeight: 500 }}>{slot.time}</span>
+                                <span style={{ color: 'var(--accent-color)' }}>{slot.availability}</span>
+                              </div>
+                            ))}
+                          </div>
+                        ) : (
+                          <div style={{ color: 'var(--danger-color)', padding: '0.5rem', textAlign: 'center' }}>No slots available or failed to fetch.</div>
+                        )}
+                      </div>
+                    )}
                   )}
                 </div>
               )

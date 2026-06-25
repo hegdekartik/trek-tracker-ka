@@ -114,6 +114,39 @@ export async function POST(request: Request) {
       return NextResponse.json({ availability: calendarData });
     }
 
+    if (action === 'getSlots') {
+      const { check_in } = body;
+      const params = new URLSearchParams();
+      params.append('_token', auth.token);
+      params.append('district', district);
+      params.append('trek', trek);
+      params.append('check_in', check_in);
+
+      const res = await fetch(`${ARANYA_API.BASE_URL}/availability`, {
+        method: 'POST',
+        headers: { 
+          'Cookie': auth.cookies,
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: params.toString()
+      });
+
+      const html = await res.text();
+      
+      const timeRegex = /<div class="slot_text[^>]*>\s*(?:&nbsp;)*\s*([^<]+)<\/div>/g;
+      const availRegex = /<div class="available_text[^>]*>\s*(?:&nbsp;)*\s*([^<]+)<\/div>/g;
+
+      const times = [...html.matchAll(timeRegex)].map(m => m[1].trim());
+      const avails = [...html.matchAll(availRegex)].map(m => m[1].trim().replace('ಲಭ್ಯವಿದೆ', 'Available'));
+
+      const parsedSlots = times.map((t, i) => ({
+        time: t,
+        availability: avails[i] || 'Unknown'
+      }));
+
+      return NextResponse.json({ slots: parsedSlots });
+    }
+
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
   } catch (error: any) {
     console.error(error);
