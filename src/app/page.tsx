@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 type Option = { value: string; text: string };
-type DayData = { date: string; text: string; bg: string; isAvailable: boolean };
+type DayData = { date: string; text: string; bg: string; isAvailable: boolean; slotsString?: string };
 type CachedData = { district: Option, trek: Option, availability: DayData[] };
 type LanguageSetting = 'default' | 'english' | 'kannada';
 
@@ -41,10 +41,6 @@ export default function Home() {
   const [treks, setTreks] = useState<Option[]>([]);
   const [selectedTrek, setSelectedTrek] = useState("");
   const [loadingDropdowns, setLoadingDropdowns] = useState(false);
-
-  const [selectedSlotDate, setSelectedSlotDate] = useState<string | null>(null);
-  const [slotData, setSlotData] = useState<any[] | null>(null);
-  const [loadingSlots, setLoadingSlots] = useState(false);
 
   useEffect(() => {
     fetchCache();
@@ -182,24 +178,6 @@ export default function Home() {
     setLoadingSync(false);
   };
 
-  const fetchSlots = async (districtValue: string, trekValue: string, dateStr: string) => {
-    setSelectedSlotDate(`${districtValue}-${trekValue}-${dateStr}`);
-    setLoadingSlots(true);
-    setSlotData(null);
-    try {
-      const res = await fetch('/api/scrape', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'getSlots', district: districtValue, trek: trekValue, check_in: dateStr })
-      });
-      const data = await res.json();
-      if (data.slots) setSlotData(data.slots);
-    } catch (e) {
-      console.error(e);
-    }
-    setLoadingSlots(false);
-  };
-
   const formatName = (text: string) => {
     if (language === 'default') return text;
     
@@ -321,7 +299,7 @@ export default function Home() {
                     </p>
                   ) : (
                     <>
-                      <div className="pill-container">
+                    <div className="pill-container">
                       {availableDays.map((day, i) => {
                         let formattedDate = day.date;
                         try {
@@ -331,47 +309,28 @@ export default function Home() {
                           formattedDate = `${parseInt(d)} ${month}`;
                         } catch (e) {}
                         
-                        const isSelected = selectedSlotDate === `${item.district.value}-${item.trek.value}-${day.date}`;
-
                         return (
                           <div 
                             key={i} 
                             className="date-pill"
-                            style={{ cursor: 'pointer', background: isSelected ? 'var(--accent-color)' : '', color: isSelected ? '#000' : '' }}
-                            onClick={() => fetchSlots(item.district.value, item.trek.value, day.date)}
+                            style={{ 
+                              display: 'flex', 
+                              flexDirection: 'column',
+                              alignItems: 'center',
+                              gap: '0.35rem',
+                              padding: '0.75rem 1.25rem'
+                            }}
                           >
-                            {formattedDate}
+                            <span style={{ fontWeight: 600 }}>{formattedDate}</span>
+                            {day.slotsString && (
+                              <span style={{ fontSize: '0.85rem', color: 'var(--accent-color)', fontWeight: 500, background: 'rgba(38,149,42,0.15)', padding: '2px 6px', borderRadius: '4px' }}>
+                                🎫 {day.slotsString}
+                              </span>
+                            )}
                           </div>
                         );
                       })}
                     </div>
-                    {availableDays.some(day => selectedSlotDate === `${item.district.value}-${item.trek.value}-${day.date}`) && (
-                      <div style={{ marginTop: '1rem', padding: '1.5rem', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid var(--glass-border)', textAlign: 'center' }}>
-                        {loadingSlots ? (
-                          <div className="empty-state" style={{ padding: '0.5rem' }}><span className="loading-spinner"></span> Loading slots...</div>
-                        ) : slotData && slotData.length > 0 ? (
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center' }}>
-                            {slotData.map((slot, idx) => (
-                              <div key={idx} style={{ 
-                                fontSize: '1.75rem', 
-                                fontWeight: '600', 
-                                color: 'var(--accent-color)',
-                                padding: '1rem 2rem',
-                                background: 'rgba(0,0,0,0.3)',
-                                borderRadius: '12px',
-                                display: 'inline-block',
-                                border: '1px solid rgba(255,255,255,0.05)',
-                                boxShadow: '0 4px 20px rgba(0,0,0,0.2)'
-                              }}>
-                                🎫 {slot.availability}
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <div style={{ color: 'var(--danger-color)', padding: '0.5rem', textAlign: 'center' }}>No slots available or failed to fetch.</div>
-                        )}
-                      </div>
-                    )}
                     </>
                   )}
                 </div>

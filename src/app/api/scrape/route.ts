@@ -101,50 +101,52 @@ export async function POST(request: Request) {
       const blockedDates = await fetchBlockedDates(district, trek, auth.token, auth.cookies);
       const dateWindow = getNext15Days();
       
-      const calendarData = dateWindow.map(date => {
+      const calendarData = await Promise.all(dateWindow.map(async (date) => {
         const isAvailable = !blockedDates.includes(date);
+        let slotsString = '';
+
+        if (isAvailable) {
+          try {
+            const params = new URLSearchParams();
+            params.append('_token', auth.token);
+            params.append('district', district);
+            params.append('trek', trek);
+            params.append('check_in', date);
+
+            const res = await fetch(`${ARANYA_API.BASE_URL}/availability`, {
+              method: 'POST',
+              headers: { 
+                'Cookie': auth.cookies,
+                'Content-Type': 'application/x-www-form-urlencoded'
+              },
+              body: params.toString()
+            });
+
+            const html = await res.text();
+            
+            // Extract only exact numeric slot formats, preventing JS template variables from matching
+            const availRegex = /<div class="available_text[^>]*>\s*(?:&nbsp;)*\s*([0-9]+\/[0-9]+\s*[^<]+)<\/div>/g;
+            const avails = [...html.matchAll(availRegex)].map(m => m[1].trim().replace('ಲಭ್ಯವಿದೆ', 'Available'));
+            
+            if (avails.length > 0) {
+              // Join if multiple timeslots exist
+              slotsString = avails.join(' | ');
+            }
+          } catch (e) {
+            console.error(`Failed to fetch slots for date ${date}:`, e);
+          }
+        }
+
         return {
           date,
           text: isAvailable ? 'Available' : 'Full / Blocked',
           bg: isAvailable ? 'rgb(0, 128, 0)' : 'transparent',
-          isAvailable
+          isAvailable,
+          slotsString
         };
-      });
-
-      return NextResponse.json({ availability: calendarData });
-    }
-
-    if (action === 'getSlots') {
-      const { check_in } = body;
-      const params = new URLSearchParams();
-      params.append('_token', auth.token);
-      params.append('district', district);
-      params.append('trek', trek);
-      params.append('check_in', check_in);
-
-      const res = await fetch(`${ARANYA_API.BASE_URL}/availability`, {
-        method: 'POST',
-        headers: { 
-          'Cookie': auth.cookies,
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: params.toString()
-      });
-
-      const html = await res.text();
-      
-      const timeRegex = /<div class="slot_text[^>]*>\s*(?:&nbsp;)*\s*([^<]+)<\/div>/g;
-      const availRegex = /<div class="available_text[^>]*>\s*(?:&nbsp;)*\s*([^<]+)<\/div>/g;
-
-      const times = [...html.matchAll(timeRegex)].map(m => m[1].trim());
-      const avails = [...html.matchAll(availRegex)].map(m => m[1].trim().replace('ಲಭ್ಯವಿದೆ', 'Available'));
-
-      const parsedSlots = times.map((t, i) => ({
-        time: t,
-        availability: avails[i] || 'Unknown'
       }));
 
-      return NextResponse.json({ slots: parsedSlots });
+      return NextResponse.json({ availability: calendarData });
     }
 
     return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
